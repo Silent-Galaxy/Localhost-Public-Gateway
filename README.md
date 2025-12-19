@@ -38,9 +38,18 @@ This tool will:
 
 
 
-
+مراحل تست واقعی پروژه عملی Silent-Gateway.bat
+https://github.com/Silent-Galaxy/Localhost-Public-Gateway/blob/main/Silent-Gateway.bat
 
 <img width="619" height="429" alt="image" src="https://github.com/user-attachments/assets/d0769bdf-6dc1-462f-a21e-35b9b66d59cc" />
+
+<img width="818" height="626" alt="image" src="https://github.com/user-attachments/assets/01e9aac7-3f08-4eea-97b6-a2c568895342" />
+
+<img width="979" height="512" alt="image" src="https://github.com/user-attachments/assets/0c4c3109-539b-49cc-839f-229b274bb161" />
+
+<img width="619" height="380" alt="image" src="https://github.com/user-attachments/assets/9f64b15b-e35d-4215-91ae-1f0049540b15" />
+
+
 
 ---
 
