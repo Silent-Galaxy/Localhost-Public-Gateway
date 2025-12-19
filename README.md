@@ -31,6 +31,15 @@ This tool will:
 3.  🚀 **One-Click Expose:** Launch a secure tunnel instantly without user intervention.
 
 به عبارت ساده: ما قصد داریم برنامه‌ای بنویسیم که کاربر فقط با یک کلیک، زمپ (XAMPP) یا سرور بازی خود را جهانی کند، بدون اینکه درگیر تنظیمات پیچیده مودم شود.
+
+
+
+
+
+
+
+
+
 <img width="619" height="429" alt="image" src="https://github.com/user-attachments/assets/d0769bdf-6dc1-462f-a21e-35b9b66d59cc" />
 
 ---
