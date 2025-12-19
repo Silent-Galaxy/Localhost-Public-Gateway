@@ -2,68 +2,64 @@
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![License](https://img.shields.io/github/license/Silent-Galaxy/Silent-Gateway?style=for-the-badge)
-![University](https://img.shields.io/badge/University-Chamran%20College%20of%20Rasht-blue?style=for-the-badge)
+![Language](https://img.shields.io/badge/Language-Python%20%7C%20Batch-blue?style=for-the-badge)
 
-> **Turn your Localhost into a Global Server without a Static IP.**
-> *تبدیل کامپیوتر شخصی به سرور جهانی بدون نیاز به آی‌پی استاتیک و عبور از محدودیت‌های NAT*
+> **Turn your Localhost into a Global Server with One Click.**
+> *تبدیل کامپیوتر شخصی به سرور جهانی با یک کلیک (اتوماسیون هوشمند)*
 
 ---
 
-## 🎓 Academic Context (اطلاعات دانشگاهی)
-This project is developed as the final practical project for the **Computer Networks** course.
-
+## 🎓 Academic Context
 | Role | Details |
 | :--- | :--- |
 | **University** | **Shahid Chamran Technical College of Rasht (TVU)** |
 | **Department** | Computer Software Engineering (B.Sc) |
-| **Course** | Computer Networks Lab |
-| **Supervisor** | **Master Abbas Mohammadi Rik** |
-| **Project Lead** | **AmirAli SalehPour** |
+| **Professor** | **Master Abbas Mohammadi Rik** |
+| **Lead Developer** | **AmirAli SalehPour** |
 
 ---
 
-## 🌍 About The Project (درباره پروژه)
-**Silent-Gateway** is a comprehensive toolkit designed to solve the **CGNAT (Carrier-Grade NAT)** challenge faced by students and developers in Iran.
-Instead of purchasing expensive VPS or Static IPs, this project utilizes **Secure Tunneling** technologies to expose local services (Like Laravel, XAMPP, Game Servers) to the public internet securely.
+## 💡 The Core Idea & Innovation (ایده و نوآوری ما)
+### The Problem
+Traditional methods require complex modem configurations, Port Forwarding, and buying Static IPs. Most users don't know how to configure these.
 
-### 🇮🇷 توضیحات فارسی
-بسیاری از دانشجویان و برنامه‌نویسان برای نمایش پروژه‌های خود یا راه‌اندازی سرور، با مشکل نداشتن IP Static و محدودیت‌های اینترنت روبرو هستند.
-پروژه **Silent-Gateway** راهکاری است که با استفاده از تکنولوژی‌های تانلینگ مدرن، کامپیوتر اتاق شما را به یک سرور قدرتمند جهانی تبدیل می‌کند.
+### 🧠 Our Solution (Automated Script)
+**AmirAli's Vision:** instead of manual configuration, we are developing a **Python/CMD Automation Tool**.
+This tool will:
+1.  🕵️‍♂️ **Auto-Detect Services:** Automatically find running services (e.g., XAMPP on port 80, Game Servers).
+2.  🌐 **Network Scan:** Identify the network interface and internet connectivity.
+3.  🚀 **One-Click Expose:** Launch a secure tunnel instantly without user intervention.
 
-### ✨ Key Features (ویژگی‌ها)
-- 🛡️ **Bypass CGNAT:** No need for Port Forwarding on the router (Works with any ISP).
-- 🔒 **Secure Tunneling:** Implementing Cloudflare Zero Trust & SSH Remote Forwarding.
-- 🌐 **Custom Domain:** Link your `localhost` to `www.your-name.com`.
-- 💸 **Cost Efficiency:** 100% Free implementation.
-
----
-
-## 🛠 Project Roadmap (نقشه راه گروهی)
-This is a collaborative project. We are looking for team members to handle the following tasks:
-
-- [ ] **Phase 1:** Setup Local Web Server (Apache/Nginx) & Database.
-- [ ] **Phase 2:** Implement Cloudflare Tunnel (The Secure Way).
-- [ ] **Phase 3:** Implement Ngrok/Playit.gg (The Gamer Way).
-- [ ] **Phase 4:** Security Analysis & Firewall Rules.
-- [ ] **Phase 5:** Final Documentation for Mr. Mohammadi Rik.
+به عبارت ساده: ما قصد داریم برنامه‌ای بنویسیم که کاربر فقط با یک کلیک، زمپ (XAMPP) یا سرور بازی خود را جهانی کند، بدون اینکه درگیر تنظیمات پیچیده مودم شود.
 
 ---
 
-## 🤝 Call for Contribution (دعوت به همکاری)
-Fellow students of **Chamran College**, if you are interested in **Network Security, Linux, or Backend Development**, please join us!
+## 🛣️ Technical Pathways (Standard Solutions)
+Based on AI analysis and Networking standards, we are exploring these paths:
 
-**How to join?**
-1. Fork this repository.
-2. Add your name to the `CONTRIBUTORS.md` file (Create one if not exists).
-3. Submit a Pull Request.
+| Method | Technology | Pros | Cons |
+| :--- | :--- | :--- | :--- |
+| **Path A** | **Cloudflare Tunnel (Argo)** | Highly Secure, Free SSL, No Open Ports | Requires Domain Name |
+| **Path B** | **Reverse SSH Tunneling** | Open Source, Full Control | Requires a cheap VPS |
+| **Path C** | **P2P / UDP Punching** | Best for Gaming (Low Latency) | Hard implementation (NAT types) |
+
+---
+
+## 🔗 Inspiration & Similar Projects (منابع و ایده‌ها)
+We analyze these open-source projects to build a better, localized version for Iranian users:
+
+1.  **[Ngrok](https://ngrok.com/)** - The industry standard (Closed source).
+2.  **[Localtunnel](https://github.com/localtunnel/localtunnel)** - Open source, Node.js based.
+3.  **[FRP (Fast Reverse Proxy)](https://github.com/fatedier/frp)** - A very fast reverse proxy written in Go (Popular).
+4.  **[Zrok](https://zrok.io/)** - Open source peer-to-peer sharing.
+5.  **[BoringProxy](https://boringproxy.io/)** - Simple tunneling meant for self-hosting.
 
 ---
 
-## 👤 Author
-**AmirAli SalehPour**
-- BSc Student at Chamran College of Rasht
-- GitHub: [@Silent-Galaxy](https://github.com/Silent-Galaxy)
+## 🤝 Call for Contribution
+We need Python developers and Network enthusiasts to help build the **Automation Script**.
+If you know how to work with `socket` library in Python or `Batch Scripting`, join us!
 
 ---
-### 📝 License
-Distributed under the MIT License. Open for educational purposes.
+### 👤 Author
+**AmirAli SalehPour** - Chamran College of Rasht
