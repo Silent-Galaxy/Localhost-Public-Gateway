@@ -2,10 +2,10 @@
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 ![License](https://img.shields.io/github/license/Silent-Galaxy/Silent-Gateway?style=for-the-badge)
-![Language](https://img.shields.io/badge/Language-Python%20%7C%20Batch-blue?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-Windows%20Batch%20%7C%20Python-blue?style=for-the-badge)
 
 > **Turn your Localhost into a Global Server with One Click.**
-> *تبدیل کامپیوتر شخصی به سرور جهانی با یک کلیک (اتوماسیون هوشمند)*
+> *تبدیل کامپیوتر شخصی به سرور جهانی با تمرکز بر سادگی (Batch Script) و هوشمندی (Python)*
 
 ---
 
@@ -19,22 +19,51 @@
 
 ---
 
-## 💡 The Core Idea & Innovation (ایده و نوآوری ما)
-### The Problem
-Traditional methods require complex modem configurations, Port Forwarding, and buying Static IPs. Most users don't know how to configure these.
+## 💡 Project Overview (معرفی پروژه)
+**Silent-Gateway** is designed with a dual-layer architecture:
+1.  **The Interface (.bat):** A Windows Batch Script designed for **End-Users**. It requires zero configuration. Just click and host.
+2.  **The Core (.py):** Python logic for network analysis, NAT detection, and port scanning.
 
-### 🧠 Our Solution (Automated Script)
-**AmirAli's Vision:** instead of manual configuration, we are developing a **Python/CMD Automation Tool**.
-This tool will:
-1.  🕵️‍♂️ **Auto-Detect Services:** Automatically find running services (e.g., XAMPP on port 80, Game Servers).
-2.  🌐 **Network Scan:** Identify the network interface and internet connectivity.
-3.  🚀 **One-Click Expose:** Launch a secure tunnel instantly without user intervention.
+**Why Batch (.bat)?**
+We prioritized the `.bat` file to ensure accessibility for all students. No complex installation is needed to start the gateway.
 
-به عبارت ساده: ما قصد داریم برنامه‌ای بنویسیم که کاربر فقط با یک کلیک، زمپ (XAMPP) یا سرور بازی خود را جهانی کند، بدون اینکه درگیر تنظیمات پیچیده مودم شود.
+---
 
+## 🗺️ For Researchers (مسیر تحقیقاتی)
+If you are joining this project for **Academic Research**, here are the open problems we aim to solve:
 
+1.  **NAT Traversal Techniques:** Analyzing different methods (STUN, TURN, Hole Punching) to find the best low-latency solution for Iranian ISPs.
+2.  **Security Analysis:** Investigating the risks of exposing localhost and implementing automated firewall rules within the script.
+3.  **Traffic Obfuscation:** Researching ways to hide tunnel traffic to prevent ISP throttling.
 
+*We encourage you to fork this repo and document your findings in the `docs/` folder.*
 
+---
+
+## 🛠️ For Developers (راهنمای توسعه‌دهندگان)
+If you want to build tools based on this project, here is the structure:
+
+- **`Silent-Gateway.bat`**: The main entry point. Modify this to change the UI/UX.
+- **`core/network_analyzer.py`**: The logic that detects IP and Open Ports.
+- **`modules/tunneling/`**: (Planned) Where we integrate Cloudflare/Ngrok binaries.
+
+**Contribution Ideas:**
+- Port the `.bat` script to **Bash** for Linux users.
+- Create a simple **GUI** using Python (Tkinter/PyQt).
+- Add support for more tunneling providers (Localtunnel, Serveo).
+
+---
+
+## 🚀 Quick Start (راهنمای استفاده)
+
+### Option 1: The Easy Way (Windows)
+1.  Download the project.
+2.  Double click on `Silent-Gateway.bat`.
+3.  Follow the on-screen instructions.
+
+### Option 2: The Developer Way
+1.  Ensure Python is installed.
+2.  Run `python main.py` to see the verbose network analysis.
 
 
 
@@ -53,32 +82,15 @@ https://github.com/Silent-Galaxy/Localhost-Public-Gateway/blob/main/Silent-Gatew
 
 ---
 
-## 🛣️ Technical Pathways (Standard Solutions)
-Based on AI analysis and Networking standards, we are exploring these paths:
-
-| Method | Technology | Pros | Cons |
-| :--- | :--- | :--- | :--- |
-| **Path A** | **Cloudflare Tunnel (Argo)** | Highly Secure, Free SSL, No Open Ports | Requires Domain Name |
-| **Path B** | **Reverse SSH Tunneling** | Open Source, Full Control | Requires a cheap VPS |
-| **Path C** | **P2P / UDP Punching** | Best for Gaming (Low Latency) | Hard implementation (NAT types) |
-
----
-
-## 🔗 Inspiration & Similar Projects (منابع و ایده‌ها)
-We analyze these open-source projects to build a better, localized version for Iranian users:
-
-1.  **[Ngrok](https://ngrok.com/)** - The industry standard (Closed source).
-2.  **[Localtunnel](https://github.com/localtunnel/localtunnel)** - Open source, Node.js based.
-3.  **[FRP (Fast Reverse Proxy)](https://github.com/fatedier/frp)** - A very fast reverse proxy written in Go (Popular).
-4.  **[Zrok](https://zrok.io/)** - Open source peer-to-peer sharing.
-5.  **[BoringProxy](https://boringproxy.io/)** - Simple tunneling meant for self-hosting.
-
----
-
 ## 🤝 Call for Contribution
-We need Python developers and Network enthusiasts to help build the **Automation Script**.
-If you know how to work with `socket` library in Python or `Batch Scripting`, join us!
+We are looking for collaborators!
+- **Research:** Help us document NAT behaviors.
+- **Code:** Improve the `.bat` interface or Python logic.
+
+**Join us to build the ultimate tool for students!**
 
 ---
 ### 👤 Author
-**AmirAli SalehPour** - Chamran College of Rasht
+**AmirAli SalehPour**
+- Chamran College of Rasht
+- GitHub: [@Silent-Galaxy](https://github.com/Silent-Galaxy)
